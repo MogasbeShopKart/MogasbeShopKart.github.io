@@ -18,6 +18,12 @@ https://mogasbeshopkart.github.io
 
 As of now only supports the template of what will become a fully developed website. 
 
+## Bugs
+
+If there are any bugs found in our implementation or you find difficulty in accessing anything within the website and you have a suggestion please email our team @: 
+
+shopkartwebdev@gmail.com
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
