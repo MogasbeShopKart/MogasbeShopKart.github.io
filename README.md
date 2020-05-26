@@ -10,7 +10,7 @@ Copy and Paste the following link into your google search engine.
 
 
 ```bash
-https://mogasbeshopkart.github.io/
+https://mogasbeshopkart.github.io
 
 ```
 
