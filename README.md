@@ -18,11 +18,5 @@ https://mogasbeshopkart.github.io
 
 As of now only supports the template of what will become a fully developed website. 
 
-## Contributing
-Pull requests are welcome please contact me via email @
 
-```bash
-shopkartwebdev@gmail.com
-
-```
 
