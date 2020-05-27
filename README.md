@@ -1,5 +1,3 @@
-# MogasbeShopKart.github.io
-
 # ShopKart
 
 ShopKart is a web application to buy Shirts, Pants, & Accessories
