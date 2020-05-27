@@ -1,5 +1,3 @@
-# MogasbeShopKart.github.io
-
 # ShopKart
 
 ShopKart is a web application to buy the Shirts/Pants/Accessories
@@ -16,7 +14,15 @@ https://mogasbeshopkart.github.io
 
 ## Usage
 
-As of now only supports the template of what will become a fully developed website. 
+As of now only supports the template of what will become a fully developed website - May 26, 2020. 
+Note: purchases cannot be made on this website
+
+
+## Bugs 
+
+If you encounter any bugs or failures to perform on this web application please contact 
+
+shopkartwebdev@gmail.com
 
 
 
