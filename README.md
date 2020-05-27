@@ -17,4 +17,9 @@ https://mogasbeshopkart.github.io
 As of now only supports the template of what will become a fully developed website. 
 
 
+## Issues
+
+If you would like to report any issues please contact our team using: 
+
+shopkartwebdev@gmail.com
 
