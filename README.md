@@ -2,7 +2,7 @@
 
 # ShopKart
 
-ShopKart is a web application to buy the Shirts/Pants/Accessories
+ShopKart is a web application to buy Shirts, Pants, & Accessories
 
 ## How to Access
 
