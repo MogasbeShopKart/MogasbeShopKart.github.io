@@ -4,68 +4,21 @@
 
 
 
-<div class="sidenav">
-  <div class="row" >
-  <h3>Collections</h3>
-  </div>
+<button id ="buttonside" class="buttonSide" onclick="toggle()">&#8801</button>
 
-  <div class="row" >
-    <button class="navButton navButtonFirst" onclick="location.href='shopMens.html'"><span>Mens </span></button>
-      <div class="dropdown">
-        <button class="navButton">&#8801</button>
-          <div class="dropdown-content">
-            <button class="dropdownElement" onclick="location.href='mensShirts.html'"><span>Shirts </span></button>
-            <button class="dropdownElement"  onclick="location.href='mensPants.html'">Pants</button>
-            <button class="dropdownElement" onclick="location.href='mensAccessories.html'">Accessories</button>
-          </div>
-      </div>
-  </div>
+<div id="bar"></div>
 
-  <br>
-  <br>
-
-  <div class="row" >
-    <button class="navButton navButtonFirst" onclick="location.href='shopWomens.html'"><span>Womens </span></button>
-      <div class="dropdown">
-        <button class="navButton">&#8801</button>
-          <div class="dropdown-content">
-            <button class="dropdownElement" onclick="location.href='womensShirts.html'"><span>Shirts </span></button>
-            <button class="dropdownElement" onclick="location.href='womensPants.html'">Pants</button>
-            <button class="dropdownElement" onclick="location.href='womensAccessories.html'">Accessories</button>
-          </div>
-      </div>
-  </div>
-  <br>
-  <br>
-  <div class="row" >
-    <button class="navButton navButtonFirst" onclick="location.href='shopChildrens.html'"><span>Childrens </span></button>
-      <div class="dropdown">
-        <button class="navButton">&#8801</button>
-          <div class="dropdown-content">
-            <button class="dropdownElement" onclick="location.href='childrensShirts.html'"><span>Shirts </span></button>
-            <button class="dropdownElement" onclick="location.href='childrensPants.html'">Pants</button>
-            <button class="dropdownElement" onclick="location.href='childrensAccessories.html'">Accessories</button>
-          </div>
-      </div>
-  </div>
-
-</div>
 
 <div class="container-fluid blueHeader">
   <h1><span class="white">Shop</span>Kart</h1>
 </div>
 
-  <div class="row headercolor">
-      <div class="col-sm-4" >
-        <button class="buttonHeader" onclick="location.href='index.html'" ><span>Home </span></button>
-      </div>
-      <div class="col-sm-4">
-        <button class="buttonHeader" onclick="location.href='mainShop.html'" ><span>Shop </span></button>
-      </div>
-      <div class="col-sm-4 buttonend">
-        <button class="buttonHeader" onclick="location.href='mainCheckout.html'" ><span>Checkout </span></button>
-      </div>
-  </div>
+<div class="change headercolor">
+    <button class="buttonHeader" onclick="location.href='index.html'" ><span>Home </span></button>
+    <button class="buttonHeader" onclick="location.href='mainShop.html'" ><span>Shop </span></button>
+    <button class="buttonHeader" onclick="location.href='mainCheckout.html'" ><span>Checkout </span></button>
+</div>
+
 
 <div class="section">
   <h2><i>Trending</i></h2>
@@ -74,139 +27,29 @@
 <br>
 <br>
 
-<div class="grid-container shift">
-  <div class="grid-item">
-    <img class="itemImage" onclick="displayModal('myModal1')" src="https://slimages.macysassets.com/is/image/MCY/products/1/optimized/11380661_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$">
-    <br>
-    <a onclick="displayModal('myModal1')"> Men's Lyden Turtle Graphic Shirt: $10.99</a>
-    <br>
-    <br>
+<script>
+  if(localStorage.getItem("option")=="open")
+  {
+    document.getElementById("bar").style.display = "block";
+    document.getElementById("buttonside").style.marginLeft = "201px";
+    localStorage.setItem("option", "open");
 
-  </div>
-  <div class="grid-item">
-    <img class="itemImage" onclick="displayModal('myModal2')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOpjwKHtoqhe0sBO8Cg0HzzmAMHzAtvRQxMDPyev1wtJ1QCaf3cFsNQ6U3oXI&usqp=CAc">
-    <br>
-    <a onclick="displayModal('myModal2')"> Seasonless Yarn Sweater Tee: $34.88</a>
-    <br>
-    <br>
+  }
+  else
+  {
+    document.getElementById("bar").style.display = "none";
+    document.getElementById("buttonside").style.marginLeft = "0px";
+    localStorage.setItem("option", "close");
 
-  </div>
-  <div class="grid-item">
-   <img class="itemImage" onclick="displayModal('myModal3')" src="https://www1.assets-gap.com/webcontent/0017/314/766/cn17314766.jpg">
-   <br>
-   <a onclick="displayModal('myModal3')"> Printed Crew-Neck Tee for Toddler Boys: $3.88</a>
-   <br>
-   <br>
+  }
+</script>
 
- </div>
- <div class="grid-item">
-   <img class="itemImage" onclick="displayModal('myModal1')" src="https://slimages.macysassets.com/is/image/MCY/products/1/optimized/11380661_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$">
-   <br>
-   <a onclick="displayModal('myModal1')"> Men's Lyden Turtle Graphic Shirt: $10.99</a>
-   <br>
-   <br>
-
- </div>
- <div class="grid-item">
-   <img class="itemImage" onclick="displayModal('myModal2')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOpjwKHtoqhe0sBO8Cg0HzzmAMHzAtvRQxMDPyev1wtJ1QCaf3cFsNQ6U3oXI&usqp=CAc">
-   <br>
-   <a onclick="displayModal('myModal2')"> Seasonless Yarn Sweater Tee: $34.88</a>
-   <br>
-   <br>
-
- </div>
- <div class="grid-item">
-  <img class="itemImage" onclick="displayModal('myModal3')" src="https://www1.assets-gap.com/webcontent/0017/314/766/cn17314766.jpg">
-  <br>
-  <a onclick="displayModal('myModal3')"> Printed Crew-Neck Tee for Toddler Boys: $3.88</a>
-  <br>
-  <br>
-
-</div>
-<div class="grid-item">
-  <img class="itemImage" onclick="displayModal('myModal1')" src="https://slimages.macysassets.com/is/image/MCY/products/1/optimized/11380661_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$">
-  <br>
-  <a onclick="displayModal('myModal1')"> Men's Lyden Turtle Graphic Shirt: $10.99</a>
-  <br>
-  <br>
-
-</div>
-<div class="grid-item">
-  <img class="itemImage" onclick="displayModal('myModal2')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOpjwKHtoqhe0sBO8Cg0HzzmAMHzAtvRQxMDPyev1wtJ1QCaf3cFsNQ6U3oXI&usqp=CAc">
-  <br>
-  <a onclick="displayModal('myModal2')"> Seasonless Yarn Sweater Tee: $34.88</a>
-  <br>
-  <br>
-
-</div>
-<div class="grid-item">
- <img class="itemImage" onclick="displayModal('myModal3')" src="https://www1.assets-gap.com/webcontent/0017/314/766/cn17314766.jpg">
- <br>
- <a onclick="displayModal('myModal3')">Printed Crew-Neck Tee for Toddler Boys: $3.88</a>
- <br>
- <br>
-
-</div>
-
-
+<div id="trendyClothing">
 </div>
 
 
 
-
-
-
-
- <!––
-***********************BEYOND THIS IS MODAL STORAGE FOR NOW***************************************
--->
-<div id="myModal1" class="modal">
-  <div class="modal-content">
-    <span onclick="deleteModal()" class="close">&times;</span>
-    <div class="row">
-      <div class="column">
-        <img id="imageModal" src="https://slimages.macysassets.com/is/image/MCY/products/1/optimized/11380661_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$">
-      </div>
-      <div class="column">
-        <br>
-        <h5>Men's Lyden Turtle Graphic Shirt</h5>
-        <h5>Price: $10.99</h5>
-        <h5>Country of Origin: United States of America<h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="myModal2" class="modal">
-  <div class="modal-content">
-    <span onclick="deleteModal()" class="close">&times;</span>
-    <div class="row">
-      <div class="column">
-        <img id="imageModal" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOpjwKHtoqhe0sBO8Cg0HzzmAMHzAtvRQxMDPyev1wtJ1QCaf3cFsNQ6U3oXI&usqp=CAc">
-      </div>
-      <div class="column">
-        <br>
-        <h5>Seasonless Yarn Sweater Tee</h5>
-        <h5>Price: $34.88</h5>
-        <h5>Country of Origin: United States of America<h5>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="myModal3" class="modal">
-  <div class="modal-content">
-    <span onclick="deleteModal()" class="close">&times;</span>
-    <div class="row">
-      <div class="column">
-        <img id="imageModal" src="https://www1.assets-gap.com/webcontent/0017/314/766/cn17314766.jpg">
-      </div>
-      <div class="column">
-        <br>
-        <h5>Printed Crew-Neck Tee for Toddler Boys</h5>
-        <h5>Price: $3.88</h5>
-        <h5>Country of Origin: United States of America<h5>
-      </div>
-    </div>
-  </div>
-</div>
+<div id="modalStore"></div>
+<script src="sideNavtoggle.js"></script>
+<script src="trending.js"></script>
 <script src="modalPrompt.js"></script>

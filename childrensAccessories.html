@@ -2,153 +2,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
 
-<div class="sidenav">
-  <div class="row" >
-  <h3>Collections</h3>
-  </div>
 
-  <div class="row" >
-    <button class="navButton navButtonFirst" onclick="location.href='shopMens.html'"><span>Mens </span></button>
-      <div class="dropdown">
-        <button class="navButton">&#8801</button>
-          <div class="dropdown-content">
-            <button class="dropdownElement" onclick="location.href='mensShirts.html'"><span>Shirts </span></button>
-            <button class="dropdownElement" onclick="location.href='mensPants.html'">Pants</button>
-            <button class="dropdownElement" onclick="location.href='mensAccessories.html'">Accessories</button>
-          </div>
-      </div>
-  </div>
 
-  <br>
-  <br>
+<button id ="buttonside" class="buttonSide" onclick="toggle()">&#8801</button>
 
-  <div class="row" >
-    <button class="navButton navButtonFirst" onclick="location.href='shopWomens.html'"><span>Womens </span></button>
-      <div class="dropdown">
-        <button class="navButton">&#8801</button>
-          <div class="dropdown-content">
-            <button class="dropdownElement" onclick="location.href='womensShirts.html'"><span>Shirts </span></button>
-            <button class="dropdownElement" onclick="location.href='womensPants.html'">Pants</button>
-            <button class="dropdownElement" onclick="location.href='womensAccessories.html'">Accessories</button>
-          </div>
-      </div>
-  </div>
-  <br>
-  <br>
-  <div class="row" >
-    <button class="navButton navButtonFirst" onclick="location.href='shopChildrens.html'"><span>Childrens </span></button>
-      <div class="dropdown">
-        <button class="navButton">&#8801</button>
-          <div class="dropdown-content">
-            <button class="dropdownElement" onclick="location.href='childrensShirts.html'"><span>Shirts </span></button>
-            <button class="dropdownElement" onclick="location.href='childrensPants.html'">Pants</button>
-            <button class="dropdownElement" onclick="location.href='childrensAccessories.html'">Accessories</button>
-          </div>
-      </div>
-  </div>
-
-</div>
-
+<div id="bar"></div>
+<script src="sideNavtoggle.js"></script>
 
 <div class="container-fluid blueHeader">
   <h1><span class="white">Shop</span>Kart</h1>
 </div>
 
-  <div class="row headercolor">
-      <div class="col-sm-4" >
-        <button class="buttonHeader" onclick="location.href='index.html'" ><span>Home </span></button>
-      </div>
-      <div class="col-sm-4">
-        <button class="buttonHeader" onclick="location.href='mainShop.html'" ><span>Shop </span></button>
-      </div>
-      <div class="col-sm-4 buttonend">
-        <button class="buttonHeader" onclick="location.href='mainCheckout.html'" ><span>Checkout </span></button>
-      </div>
-  </div>
+<div class="change headercolor">
+    <button class="buttonHeader" onclick="location.href='index.html'" ><span>Home </span></button>
+    <button class="buttonHeader" onclick="location.href='mainShop.html'" ><span>Shop </span></button>
+    <button class="buttonHeader" onclick="location.href='mainCheckout.html'" ><span>Checkout </span></button>
+</div>
 
 <div class="section">
   <h2 class="ChildrensHeader"><i>Children's Accessories</i></h2>
 </div>
-
-
-
 <br>
 <br>
-<div class="grid-container shift">
-  <div class="grid-item">
-    <img onclick="displayModal('myModal4')" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7KtPdGDoLoIlzoo5x0e-oG2_HexWdMU7NcRx1TcbmEXbOpCR1ednpR5eF8t4g7OxKyNJJTnggBkNT4bakd55w938fgqOdvanJkjLG9Vj2sUcq4pCEg5Tnbw&usqp=CAE">
-    <br>
-    <a onclick="displayModal('myModal4')">Children's Embossed Heart Locket in Sterling Silver: $80.99</a>
-    <br>
-  </div>
-  <div class="grid-item">
-    <img onclick="displayModal('myModal4')" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7KtPdGDoLoIlzoo5x0e-oG2_HexWdMU7NcRx1TcbmEXbOpCR1ednpR5eF8t4g7OxKyNJJTnggBkNT4bakd55w938fgqOdvanJkjLG9Vj2sUcq4pCEg5Tnbw&usqp=CAE">
-    <br>
-    <a onclick="displayModal('myModal4')">Children's Embossed Heart Locket in Sterling Silver: $80.99</a>
-    <br>
-  </div>
-  <div class="grid-item">
-    <img onclick="displayModal('myModal4')" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7KtPdGDoLoIlzoo5x0e-oG2_HexWdMU7NcRx1TcbmEXbOpCR1ednpR5eF8t4g7OxKyNJJTnggBkNT4bakd55w938fgqOdvanJkjLG9Vj2sUcq4pCEg5Tnbw&usqp=CAE">
-    <br>
-    <a onclick="displayModal('myModal4')">Children's Embossed Heart Locket in Sterling Silver: $80.99</a>
-    <br>
-  </div>
-  <div class="grid-item">
-    <img onclick="displayModal('myModal4')" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7KtPdGDoLoIlzoo5x0e-oG2_HexWdMU7NcRx1TcbmEXbOpCR1ednpR5eF8t4g7OxKyNJJTnggBkNT4bakd55w938fgqOdvanJkjLG9Vj2sUcq4pCEg5Tnbw&usqp=CAE">
-    <br>
-    <a onclick="displayModal('myModal4')">Children's Embossed Heart Locket in Sterling Silver: $80.99</a>
-    <br>
-  </div>
-  <div class="grid-item">
-    <img onclick="displayModal('myModal4')" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7KtPdGDoLoIlzoo5x0e-oG2_HexWdMU7NcRx1TcbmEXbOpCR1ednpR5eF8t4g7OxKyNJJTnggBkNT4bakd55w938fgqOdvanJkjLG9Vj2sUcq4pCEg5Tnbw&usqp=CAE">
-    <br>
-    <a onclick="displayModal('myModal4')">Children's Embossed Heart Locket in Sterling Silver: $80.99</a>
-    <br>
-  </div>
-  <div class="grid-item">
-    <img onclick="displayModal('myModal4')" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7KtPdGDoLoIlzoo5x0e-oG2_HexWdMU7NcRx1TcbmEXbOpCR1ednpR5eF8t4g7OxKyNJJTnggBkNT4bakd55w938fgqOdvanJkjLG9Vj2sUcq4pCEg5Tnbw&usqp=CAE">
-    <br>
-    <a onclick="displayModal('myModal4')">Children's Embossed Heart Locket in Sterling Silver: $80.99</a>
-    <br>
-  </div>
-  <div class="grid-item">
-    <img onclick="displayModal('myModal4')" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7KtPdGDoLoIlzoo5x0e-oG2_HexWdMU7NcRx1TcbmEXbOpCR1ednpR5eF8t4g7OxKyNJJTnggBkNT4bakd55w938fgqOdvanJkjLG9Vj2sUcq4pCEg5Tnbw&usqp=CAE">
-    <br>
-    <a onclick="displayModal('myModal4')">Children's Embossed Heart Locket in Sterling Silver: $80.99</a>
-    <br>
-  </div>
-  <div class="grid-item">
-    <img onclick="displayModal('myModal4')" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7KtPdGDoLoIlzoo5x0e-oG2_HexWdMU7NcRx1TcbmEXbOpCR1ednpR5eF8t4g7OxKyNJJTnggBkNT4bakd55w938fgqOdvanJkjLG9Vj2sUcq4pCEg5Tnbw&usqp=CAE">
-    <br>
-    <a onclick="displayModal('myModal4')">Children's Embossed Heart Locket in Sterling Silver: $80.99</a>
-    <br>
-  </div>
-  <div class="grid-item">
-    <img onclick="displayModal('myModal4')" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7KtPdGDoLoIlzoo5x0e-oG2_HexWdMU7NcRx1TcbmEXbOpCR1ednpR5eF8t4g7OxKyNJJTnggBkNT4bakd55w938fgqOdvanJkjLG9Vj2sUcq4pCEg5Tnbw&usqp=CAE">
-    <br>
-    <a onclick="displayModal('myModal4')">Children's Embossed Heart Locket in Sterling Silver: $80.99</a>
-    <br>
-  </div>
 
+<div id="childrensAccessories">
 </div>
 
-<!––
-***********************BEYOND THIS IS MODAL STORAGE FOR NOW***************************************
--->
-<div id="myModal4" class="modal">
- <div class="modal-content">
-   <span onclick="deleteModal()" class="close">&times;</span>
-   <div class="row">
-     <div class="column">
-       <img id="imageModal" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7KtPdGDoLoIlzoo5x0e-oG2_HexWdMU7NcRx1TcbmEXbOpCR1ednpR5eF8t4g7OxKyNJJTnggBkNT4bakd55w938fgqOdvanJkjLG9Vj2sUcq4pCEg5Tnbw&usqp=CAE">
-     </div>
-     <div class="column">
-       <br>
-       <h5>Children's Embossed Heart Locket in Sterling Silver</h5>
-       <h5>Price: $80.99</h5>
-       <h5>Country of Origin: England<h5>
-     </div>
-   </div>
- </div>
-</div>
+
+<div id="modalStore"></div>
+
+<script src="childrensItems.js"></script>
 <script src="modalPrompt.js"></script>
