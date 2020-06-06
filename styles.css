@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 .backBtn{
   background-color:rgb(13, 81, 200);
   color:white;
@@ -27,6 +28,11 @@
 .buttonSide{
   z-index:2;
   margin-top: 94px;
+=======
+.buttonSide{
+  z-index:2;
+  margin-top: 210px;
+>>>>>>> master
   position: fixed;
   margin-left:210px;
   background-color: rgb(13, 81, 200);
@@ -36,8 +42,13 @@
   border:solid;
   border-radius: 6px;
 }
+<<<<<<< HEAD
 .homeImage{
   border:none;
+=======
+
+.homeImage{
+>>>>>>> master
   width:760px;
   padding-left: 1;
 }
@@ -57,10 +68,16 @@ img {
   margin-right:0;
 
 }
+<<<<<<< HEAD
 .resultNotFound{
   text-align:left;
   margin-left: 50px;
   margin-top: 30px;
+=======
+p{
+  font-size:12;
+  color:black;
+>>>>>>> master
 }
 
   .blueHeader{
@@ -106,11 +123,15 @@ img {
   margin: 0px;
 }
 
+<<<<<<< HEAD
 .sticky {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
 }
+=======
+
+>>>>>>> master
 .buttonHeader:hover span {
   font-weight: bold;
 }
@@ -321,8 +342,13 @@ img {
         grid-template-rows: 300px ;
 
        }
+<<<<<<< HEAD
        .shift{
          padding-left:20px;
+=======
+       [class*="shift"] {
+         padding-left:0px;
+>>>>>>> master
         }
         body{
           overflow-x: hidden;
@@ -346,6 +372,7 @@ img {
         width: 100%;
         height:240px;
       }
+<<<<<<< HEAD
 
       [class*="backBtn"] {
         background-color:rgb(13, 81, 200);
@@ -376,6 +403,10 @@ img {
         padding-bottom: -1px;
         border-width: 1px;
         margin-left: -4px;
+=======
+      h5{
+        padding-left: 15%;
+>>>>>>> master
       }
 
 
@@ -424,5 +455,8 @@ img {
       }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 }

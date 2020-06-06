@@ -6,11 +6,27 @@
 
 <button id ="buttonside" class="buttonSide" onclick="toggle()">&#8801</button>
 
+<<<<<<< HEAD
 
 <div id="bar"></div>
 <div id="homeHeader" class="sticky"></div>
 
 
+=======
+<div id="bar"></div>
+
+
+<div class="container-fluid blueHeader">
+  <h1><span class="white">Shop</span>Kart</h1>
+</div>
+
+<div class="change headercolor">
+    <button class="buttonHeader" onclick="location.href='index.html'" ><span>Home </span></button>
+    <button class="buttonHeader" onclick="location.href='mainShop.html'" ><span>Shop </span></button>
+    <button class="buttonHeader" onclick="location.href='mainCheckout.html'" ><span>Checkout </span></button>
+</div>
+
+>>>>>>> master
 
 
 <script>
@@ -20,6 +36,7 @@
     document.getElementById("buttonside").style.marginLeft = "201px";
     localStorage.setItem("option", "open");
 
+<<<<<<< HEAD
   }
   else
   {
@@ -43,10 +60,35 @@
   <div id="trendyClothing">
   </div>
   </div>
+=======
+<script>
+  if(localStorage.getItem("option")=="open")
+  {
+    document.getElementById("bar").style.display = "block";
+    document.getElementById("buttonside").style.marginLeft = "201px";
+    localStorage.setItem("option", "open");
+
+  }
+  else
+  {
+    document.getElementById("bar").style.display = "none";
+    document.getElementById("buttonside").style.marginLeft = "0px";
+    localStorage.setItem("option", "close");
+
+  }
+</script>
+
+<div id="trendyClothing">
+</div>
+
+>>>>>>> master
 
 
 <div id="modalStore"></div>
 <script src="sideNavtoggle.js"></script>
+<<<<<<< HEAD
 <script src="itemStorage.js"></script>
+=======
+>>>>>>> master
 <script src="trending.js"></script>
 <script src="modalPrompt.js"></script>

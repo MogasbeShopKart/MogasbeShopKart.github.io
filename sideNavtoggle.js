@@ -1,12 +1,17 @@
 
+<<<<<<< HEAD
 function clicked(){
   localStorage.setItem("modal","close");
 }
 var b='<div id="sidenav" class="sidenav sticky">'+
+=======
+var b='<div id="sidenav" class="sidenav">'+
+>>>>>>> master
         '<div class="row">'+
   '<h3>Collections</h3>'+
   '</div>'+
   '<div class="row" >'+
+<<<<<<< HEAD
     '<button class="navButton navButtonFirst" onclick="clicked(), location.href='+"'shopMens.html'"+'"><span>Mens </span></button>'+
       '<div class="dropdown">'+
         '<button class="navButton">&#8801</button>'+
@@ -14,6 +19,15 @@ var b='<div id="sidenav" class="sidenav sticky">'+
             '<button class="dropdownElement" onclick= "clicked(), location.href='+"'mensShirts.html'"+'"><span>Shirts </span></button>'+
             '<button class="dropdownElement"  onclick="clicked(), location.href='+"'mensPants.html'"+'">Pants</button>'+
             '<button class="dropdownElement" onclick="clicked(), location.href='+"'mensAccessories.html'"+'">Accessories</button>'+
+=======
+    '<button class="navButton navButtonFirst" onclick="location.href='+"'shopMens.html'"+'"><span>Mens </span></button>'+
+      '<div class="dropdown">'+
+        '<button class="navButton">&#8801</button>'+
+          '<div class="dropdown-content">'+
+            '<button class="dropdownElement" onclick="location.href='+"'mensShirts.html'"+'"><span>Shirts </span></button>'+
+            '<button class="dropdownElement"  onclick="location.href='+"'mensPants.html'"+'">Pants</button>'+
+            '<button class="dropdownElement" onclick="location.href='+"'mensAccessories.html'"+'">Accessories</button>'+
+>>>>>>> master
           "</div>"+
       "</div>"+
   "</div>"+
@@ -21,6 +35,7 @@ var b='<div id="sidenav" class="sidenav sticky">'+
   "<br>"+
 
   '<div class="row" >'+
+<<<<<<< HEAD
     '<button class="navButton navButtonFirst" onclick="clicked(), location.href='+"'shopWomens.html'"+'"><span>Womens </span></button>'+
       '<div class="dropdown">'+
         '<button class="navButton">&#8801</button>'+
@@ -28,12 +43,22 @@ var b='<div id="sidenav" class="sidenav sticky">'+
             '<button class="dropdownElement" onclick="clicked(), location.href='+"'womensShirts.html'"+'"><span>Shirts </span></button>'+
             '<button class="dropdownElement"  onclick="clicked(), location.href='+"'womensPants.html'"+'">Pants</button>'+
             '<button class="dropdownElement" onclick="clicked(), location.href='+"'womensAccessories.html'"+'">Accessories</button>'+
+=======
+    '<button class="navButton navButtonFirst" onclick="location.href='+"'shopWomens.html'"+'"><span>Womens </span></button>'+
+      '<div class="dropdown">'+
+        '<button class="navButton">&#8801</button>'+
+          '<div class="dropdown-content">'+
+            '<button class="dropdownElement" onclick="location.href='+"'womensShirts.html'"+'"><span>Shirts </span></button>'+
+            '<button class="dropdownElement"  onclick="location.href='+"'womensPants.html'"+'">Pants</button>'+
+            '<button class="dropdownElement" onclick="location.href='+"'womensAccessories.html'"+'">Accessories</button>'+
+>>>>>>> master
           "</div>"+
       "</div>"+
   "</div>"+
   "<br>"+
   "<br>"+
   '<div class="row" >'+
+<<<<<<< HEAD
     '<button class="navButton navButtonFirst" onclick="clicked(), location.href='+"'shopChildrens.html'"+'"><span>Childrens </span></button>'+
       '<div class="dropdown">'+
         '<button class="navButton">&#8801</button>'+
@@ -41,6 +66,15 @@ var b='<div id="sidenav" class="sidenav sticky">'+
             '<button class="dropdownElement" onclick="clicked(), location.href='+"'childrensShirts.html'"+'"><span>Shirts </span></button>'+
             '<button class="dropdownElement"  onclick="clicked(), location.href='+"'childrensPants.html'"+'">Pants</button>'+
             '<button class="dropdownElement" onclick="clicked(), location.href='+"'childrensAccessories.html'"+'">Accessories</button>'+
+=======
+    '<button class="navButton navButtonFirst" onclick="location.href='+"'shopChildrens.html'"+'"><span>Childrens </span></button>'+
+      '<div class="dropdown">'+
+        '<button class="navButton">&#8801</button>'+
+          '<div class="dropdown-content">'+
+            '<button class="dropdownElement" onclick="location.href='+"'childrensShirts.html'"+'"><span>Shirts </span></button>'+
+            '<button class="dropdownElement"  onclick="location.href='+"'childrensPants.html'"+'">Pants</button>'+
+            '<button class="dropdownElement" onclick="location.href='+"'childrensAccessories.html'"+'">Accessories</button>'+
+>>>>>>> master
           "</div>"+
       "</div>"+
   "</div>"+
@@ -49,6 +83,7 @@ var b='<div id="sidenav" class="sidenav sticky">'+
 "</div>";
 
 document.getElementById("bar").innerHTML=b;
+<<<<<<< HEAD
 var front='<div class="sticky">'+
   '<div class="container-fluid blueHeader sticky">'+
     '<h1><span class="white">Shop</span>Kart</h1>'+
@@ -64,6 +99,8 @@ var front='<div class="sticky">'+
 
 "</div>";
 document.getElementById("homeHeader").innerHTML=front;
+=======
+>>>>>>> master
 
 function toggle()
 {
