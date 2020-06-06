@@ -2,33 +2,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
 
+
+
 <button id ="buttonside" class="buttonSide" onclick="toggle()">&#8801</button>
 
+
 <div id="bar"></div>
-<script src="sideNavtoggle.js"></script>
+<div id="homeHeader" class="sticky"></div>
 
-<div class="container-fluid blueHeader">
-  <h1><span class="white">Shop</span>Kart</h1>
-</div>
+<div id="search"></div>
 
-<div class="change headercolor">
-    <button class="buttonHeader" onclick="location.href='index.html'" ><span>Home </span></button>
-    <button class="buttonHeader" onclick="location.href='mainShop.html'" ><span>Shop </span></button>
-    <button class="buttonHeader" onclick="location.href='mainCheckout.html'" ><span>Checkout </span></button>
-</div>
-
-
-<div class="section">
-  <h2><i>Men's Trending</i></h2>
+<div id="head">
+  <div class="section">
+    <h2><i>Men's Trending</i></h2>
+  </div>
+    <div id="mensClothing">
+    </div>
 </div>
 
 
-
-<br>
-<br>
-<div id="mensClothing">
-</div>
 
 <div id="modalStore"></div>
-<script src="mensItems.js"></script>
+
+
+<script src="sideNavtoggle.js"></script>
+<script src="itemStorage.js"></script>
+<script src="trending.js"></script>
 <script src="modalPrompt.js"></script>

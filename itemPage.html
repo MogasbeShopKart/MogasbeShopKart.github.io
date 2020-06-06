@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+
+<style>
+
+</style>
+
+<button id ="buttonside" class="buttonSide" onclick="toggle()">&#8801</button>
+
+<div id="bar"></div>
+<div id="homeHeader" class="sticky"></div>
+
+<div id="search">
+
+</div>
+
+
+<script>
+  if(localStorage.getItem("option")=="open")
+  {
+    document.getElementById("bar").style.display = "block";
+    document.getElementById("buttonside").style.marginLeft = "201px";
+    localStorage.setItem("option", "open");
+  }
+  else
+  {
+    document.getElementById("bar").style.display = "none";
+    document.getElementById("buttonside").style.marginLeft = "0px";
+    localStorage.setItem("option", "close");
+
+  }
+  var yu=localStorage.getItem("file").split("/");
+
+  function back(){
+    localStorage.setItem("modal","open");
+    if(yu[yu.length-1]=="itemPage.html")
+    {
+      localStorage.setItem("modal","close");
+      return "mainShop.html";
+    }
+    return localStorage.getItem("file");
+  }
+  if(localStorage.getItem("file")==null)
+  {
+    localStorage.setItem("file","index.html");
+  }
+
+
+  var tt='<div class="shiftMore"><div class="row"><div class="column">'+
+  '<img class="itemPlus" src="'+localStorage.getItem("src")+'"></img></div>'+
+  '<div class="column"><p class="alignItem"><b>'+localStorage.getItem("name")+'</b></p>'+
+  '<p class="alignItem"><b>Price:</b>'+localStorage.getItem("price")+'</p>'+
+  '<p class="alignItem"><b>Country of Origin:</b> '+localStorage.getItem("origin")+'</p>'+
+  '<p class="alignItem"><b>Arrival:</b> 3 days</p>'+
+  '<p class="alignItem"><b>Quantity: </b>1</p>'+
+  '<p class="alignItem"><b>Sizes </b>: small, medium, large</p>'+
+  '<button id="butt" onclick="back(), location.href='+"'"+back()+"'"+'"class="backBtn alignItem">Back</button></div></div></div>';
+  document.getElementById("search").innerHTML = tt;
+
+</script>
+<div id="modalStore"></div>
+
+<script src="sideNavtoggle.js"></script>
+<script src="itemStorage.js"></script>
+<script src="trending.js"></script>
+<script src="modalPrompt.js"></script>
