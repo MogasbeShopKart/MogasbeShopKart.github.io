@@ -4,32 +4,24 @@
 
 
 
-
 <button id ="buttonside" class="buttonSide" onclick="toggle()">&#8801</button>
 
+
 <div id="bar"></div>
+<div id="homeHeader" class="sticky"></div>
 
-<script src="sideNavtoggle.js"></script>
+  <div id="search">
+    </div>
 
-<div class="container-fluid blueHeader">
-  <h1><span class="white">Shop</span>Kart</h1>
-</div>
+  <div id="head">
+    <div class="section">
+      <h2>Welcome to ShopKart</h2>
+    </div>
 
-<div class="change headercolor">
-    <button class="buttonHeader" onclick="location.href='index.html'" ><span>Home </span></button>
-    <button class="buttonHeader" onclick="location.href='mainShop.html'" ><span>Shop </span></button>
-    <button class="buttonHeader" onclick="location.href='mainCheckout.html'" ><span>Checkout </span></button>
-</div>
-
-
-<div class="section">
-  <h2>Welcome to ShopKart</h2>
-</div>
-
-  <img class="homeImage" src="https://payload.cargocollective.com/1/18/605204/9697823/SPREAD_084803_p04-05_1000.jpg">
-  <img class="homeImage" src="https://weekly-ads.us/public/gimg/1/5/8/2/4/9/2/1582492-900-100000.jpg">
-  <img class="homeImage" src="https://weekly-ads.us/public/gimg/1/5/6/0/0/9/7/1560097-900-100000.jpg">
-
+      <img class="homeImage" src="https://payload.cargocollective.com/1/18/605204/9697823/SPREAD_084803_p04-05_1000.jpg">
+      <img class="homeImage" src="https://weekly-ads.us/public/gimg/1/5/8/2/4/9/2/1582492-900-100000.jpg">
+      <img class="homeImage" src="https://weekly-ads.us/public/gimg/1/5/6/0/0/9/7/1560097-900-100000.jpg">
+    </div>
 <script>
   if(localStorage.getItem("option")=="open")
   {
@@ -47,3 +39,4 @@
   }
 </script>
 <script src="sideNavtoggle.js"></script>
+<script src="itemStorage.js"></script>
