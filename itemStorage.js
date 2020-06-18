@@ -1,4 +1,7 @@
-
+if(!localStorage.getItem("reccomendation"))
+{
+  localStorage.setItem("reccomendation","");
+}
 var mensAccessories = [
 {
   "Name": "Gold Navy Blue Silk Tie Pocket Square Set",
@@ -41,13 +44,7 @@ var mensShirts = [
 var mensPopular= [
 
   {
-    "Name": "Gold Navy Blue Silk Tie Pocket Square Set",
-    "Image":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSg-tt_c4q3a-ku9M5wqgVSNwh9MAAZ5coUDtMQy5sfTNGKXP-2VMdKZvFqBspewlnlU37M5uPL1vYrqFM56lhttsKl2Tw3fltnlV6CENc&usqp=CAE",
-    "Price": 25.99,
-    "Origin":"Italy"
-  },
-  {
-    "Name": "Gold Navy Blue Silk Tie Pocket Square Set",
+    "Name": "Curve Men's Cologne - Eau de Cologne",
     "Image":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSg-tt_c4q3a-ku9M5wqgVSNwh9MAAZ5coUDtMQy5sfTNGKXP-2VMdKZvFqBspewlnlU37M5uPL1vYrqFM56lhttsKl2Tw3fltnlV6CENc&usqp=CAE",
     "Price": 25.99,
     "Origin":"Italy"
@@ -109,7 +106,7 @@ var childrensPants = [
   "Origin":"Japan"
 },
 {
-  "Name": "Functional-Drawstring Jogger Shorts for Toddler Boys",
+  "Name": "Jogger Shorts for Toddler Boys",
   "Image":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRQxEjnATHnvkcUAZBMrfrC3UakE0Q7cb2N0epddoUK2QbYTfdQkuSe99EV1RtimET9LKT6M81a&usqp=CAc",
   "Price": 5.99,
   "Origin":"America"
@@ -142,7 +139,13 @@ var childrensPopular= [
   "Origin":"Japan"
 },
 {
-  "Name": "Functional-Drawstring Jogger Shorts for Toddler Boys",
+  "Name": "U.S. Polo Assn. Boys Solid Polo",
+  "Image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQzO3Cg8nExIWae80pqxdC5YTG3SximBTFNsTdMLc3sZnNa9c0928T6TAe4vlNIRv8GkB2_39VT50fNb1camOeeDbpzSvFvsTllWm8eqOHz&usqp=CAE",
+  "Price": 8.88,
+  "Origin":"United States Of America"
+},
+{
+  "Name": "Jogger Shorts for Toddler Boys",
   "Image":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRQxEjnATHnvkcUAZBMrfrC3UakE0Q7cb2N0epddoUK2QbYTfdQkuSe99EV1RtimET9LKT6M81a&usqp=CAc",
   "Price": 5.99,
   "Origin":"America"
@@ -241,21 +244,59 @@ function createItem(arrayPos)
   for(i in arrayPos)
   {
     codeblock+='<div class="grid-item">' +
-      '<img class ="itemImage" onclick="display('+i+')" src="' +arrayPos[i].Image +'" alt="'+
-      arrayPos[i].Origin+'">'+
-      '<br>' +
-      '<a onclick="display('+i+')">'+arrayPos[i].Name+': $'+arrayPos[i].Price+'</a>'+
+      '<img class ="itemImage" onclick="display('+i+')" src="' +arrayPos[i].Image +'" alt="'+arrayPos[i].Origin+'">'+
+      '<a class="itemLink"onclick="display('+i+')">'+arrayPos[i].Name+'<span class="itemPrice">: $'+arrayPos[i].Price+'</span></a>'+
       '<br>'+
       '</div>';
   }
   codeblock+='</div>';
   return codeblock;
 }
+function createItemAll(arrayPos,arrayPos2,arrayPos3)
+{
+  var i="";
+  var count=0;
+  var codeblock="";
+  for(i in arrayPos)
+  {
+    codeblock+='<div class="grid-item">' +
+      '<img class ="itemImage" onclick="display('+count+')" src="' +arrayPos[i].Image +'" alt="'+
+      arrayPos[i].Origin+'">'+
+      '<a class="itemLink"onclick="display('+count+')">'+arrayPos[i].Name+'<span class="itemPrice">: $'+arrayPos[i].Price+'</span></a>'+
+      '<br>'+
+      '</div>';
+      count++;
+  }
 
-//THIS IS OBJECT WITH ALL
+  for(i in arrayPos2)
+  {
+    codeblock+='<div class="grid-item">' +
+      '<img class ="itemImage" onclick="display('+count+')" src="' +arrayPos2[i].Image +'" alt="'+
+      arrayPos2[i].Origin+'">'+
+      '<a class="itemLink"onclick="display('+count+')">'+arrayPos2[i].Name+'<span class="itemPrice">: $'+arrayPos2[i].Price+'</span></a>'+
+      '<br>'+
+      '</div>';
+      count++;
+  }
+
+  for(i in arrayPos3)
+  {
+    codeblock+='<div class="grid-item">' +
+      '<img class ="itemImage" onclick="display('+count+')" src="' +arrayPos3[i].Image +'" alt="'+
+      arrayPos3[i].Origin+'">'+
+      '<a class="itemLink"onclick="display('+count+')">'+arrayPos3[i].Name+'<span class="itemPrice">: $'+arrayPos3[i].Price+'</span></a>'+
+      '<br>'+
+      '</div>';
+      count++;
+  }
+
+  return codeblock;
+}
+
 var all=[[mensAccessories,mensPants,mensShirts,mensPopular],
 [childrensAccessories,childrensPants,childrensShirts,childrensPopular],
 [womensAccessories,womensPants,womensShirts,womensPopular]];
+
 function getAll()
 {
   return all;
@@ -419,5 +460,14 @@ if(document.getElementById("womensClothing")!=null)
   opt+=createItem(all[2][3]);
   id="womensClothing";
 }
+if(document.getElementById("trendyClothing")!=null)
+{
+  var i=0;
+  opt='<div class="grid-container shift">';
+  opt+=createItemAll(all[0][3],all[1][3],all[2][3]);
+  opt+='</div>'
+  id="trendyClothing";
+}
+
 
 document.getElementById(id).innerHTML = opt
